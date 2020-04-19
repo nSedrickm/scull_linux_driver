@@ -1,9 +1,5 @@
 
-ifneq ($(KERNELRELEASE),)
-
 	obj-m := sc_driver.o
-
-else
 
 	KERN_DIR ?= /usr/src/linux-headers-$(shell uname -r)/
 	PWD := $(shell pwd)
@@ -11,9 +7,6 @@ else
 default:
 	$(MAKE) -C $(KERN_DIR) M=$(PWD) modules
 
-endif
-
-
 clean:
-	rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions
+	rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions *.order *.symvers
 

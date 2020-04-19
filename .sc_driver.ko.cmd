@@ -1,1 +1,0 @@
-cmd_/home/nsedrickm/Documents/scull_linux_driver/sc_driver.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/nsedrickm/Documents/scull_linux_driver/sc_driver.ko /home/nsedrickm/Documents/scull_linux_driver/sc_driver.o /home/nsedrickm/Documents/scull_linux_driver/sc_driver.mod.o ;  true
