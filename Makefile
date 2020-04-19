@@ -1,5 +1,5 @@
 
-	obj-m := sc_driver.o
+	obj-m := scull_driver.o
 
 	KERN_DIR ?= /usr/src/linux-headers-$(shell uname -r)/
 	PWD := $(shell pwd)
